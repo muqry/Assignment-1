@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Search Youtube here</h1>
+  <input #videoName type="search" class="form-control me-2" placeholder="Youtube Video..." required>
+  
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit" (click)="getData()">Search</button>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let video of video">
+      <a target="_blank" [href]="'https://www.Youtube.com/video/' + video.id.videoId">
+        <img class="img-thumbnail" [src]="video.snippet.thumbnails.medium.url"/>
+      </a>
+      <p>{{ video.snippet.title }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+.pic {
+  height: auto;
+  width: 302px;
+  margin-right: 20px; /* Added margin to create space between image and text */
+}
+
+.text {
+  width: calc(100% - 322px); /* Adjusted width to accommodate both image and text */
+}
+</style>
+
+<html>
+ <title> An About Us Page | CoderGirl </title>
+
+<body>
+    <section class="about-us">
+        <div class="about">
+          <img src="assets/about-pic.jpg" class="pic">
+          <div class="text">
+            <h2>About Us</h2>
+            <h4>Muhammad Muqry Bin Razaly </h4> <br>
+            <h5>Front-end Developer & <span>Designer</span></h5>
+            <h3>The Purpose Of This Project</h3>
+            <p>This project was developed to serve as an example of Angular development expertise and third-party 
+              API integration—more especially, the YouTube API connection. The project entails utilising Angular to 
+              design and build a frontend user experience with pages for the home, about, and search pages. 
+              It also has to integrate with the YouTube API, which means looking through the services that are accessible 
+              on the Google Cloud Console, choosing the right endpoints, and putting in place the logic that the Angular 
+              application needs to perform HTTP calls and process replies. In order to improve the user experience, 
+              creativity is encouraged when displaying the answer data from the YouTube API, whether through bespoke 
+              design, interactive features, or purposeful organisation.  Ultimately, the project aims to 
+              showcase the developer's ability to build a functional Angular application that effectively 
+              interacts with the YouTube API and presents response data in an intuitive and engaging manner.</p>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>

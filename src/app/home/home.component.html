@@ -1,0 +1,156 @@
+<style>
+    .intro-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro-text h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+        line-height: var(--line-height);
+    }
+
+    .hear {
+        color: var(--primary-color);
+    }
+
+    .connecting {
+        color: var(--secondary-color);
+    }
+
+    .card-container {
+        display: flex; /* Make the container flex */
+        align-items: flex-start; /* Align items at the top */
+        padding: 20px; /* Adjust padding as needed */
+        border-radius: 10px; /* Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    }
+
+    .card-container .btn {
+        margin-top: 10px; /* Adjust button spacing */
+    }
+
+    .i-frame {
+        width: 50%; /* Adjust width as needed */
+        padding-top: 28.125%; /* 16:9 aspect ratio */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .i-frame iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .stand-1 {
+        height: 90px;
+        width: 6px;
+        background-color: var(--primary-color);
+        transform: rotate(40deg);
+        position: absolute;
+        top: calc(50% - 45px);
+        left: -20px;
+    }
+
+    .stand-2 {
+        height: 90px;
+        width: 6px;
+        background-color: var(--secondary-color);
+        transform: rotate(-40deg);
+        position: absolute;
+        top: calc(50% - 45px);
+        right: -20px;
+    }
+
+    /* Additional card container with different color */
+    .card-container-alt {
+        background-color: #8ebcea; /* Grey background color */
+        margin-top: 20px; /* Add margin to separate from the first card container */
+    }
+
+    /* Change background color of the second card container */
+    .card-container-alt:nth-child(2) {
+        background-color: #ffccff;
+    }
+</style>
+
+<section class="hero">
+    <div class="card-container intro-text">
+        <div>
+            <h1>
+                <span class="hear"> You can Hear the Jabs </span> <br />
+                <span class="connecting"> Connecting</span>
+            </h1>
+            <p>
+                An online streaming platform for boxing matches <br />
+                We also dedicate some special time to throwbacks cuz old is gold
+            </p>
+        </div>
+        <div class="i-frame">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sUmM_PFpsvQ"
+                title="YouTube video player"
+                frameborder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+        </div>
+    </div>
+
+    <!-- Second card container with different color -->
+    <div class="card-container card-container-alt intro-text">
+        <div>
+            <h1>
+                <span class="hear"> One Of The Girl </span> <br />
+            </h1>
+            <p>
+                The Weeknd, Lily Rose Depp, Jennie
+            </p>
+        </div>
+        <div class="i-frame">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hNs7I5H7UUQ?si=jmcXdk_ItaMDc37F"
+                title="YouTube video player"
+                frameborder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+        </div>
+    </div>
+
+    <!-- Third card container with different color -->
+    <div class="card-container card-container-alt intro-text">
+        <div>
+            <h1>
+                <span class="hear"> Podcast Sterk </span> <br />
+            </h1>
+            <p>
+                PodcaSTERK S4E6 | MENELUSURI PENGEMBARAAN LIVE <br>
+                TIKTOK DAN YOUTUBE, HIBURAN ATAU MEMINTA SEDEKAH?
+            </p>
+        </div>
+        <div class="i-frame">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7ZObgk_J2X0?si=GtYEiOWd307AudvJ"
+                title="YouTube video player"
+                frameborder="10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <div class="stand-1"></div>
+            <div class="stand-2"></div>
+        </div>
+    </div>
+</section>
